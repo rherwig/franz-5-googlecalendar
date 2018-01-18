@@ -22,6 +22,7 @@ module.exports = Franz => {
   const hideModal = () => {
     modal.querySelector('p').innerHTML = '';
     updates--;
+    updates = updates < 0 ? 0 : updates;
     modal.classList.remove('open');
   };
 
