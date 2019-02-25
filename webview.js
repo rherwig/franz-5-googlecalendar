@@ -31,8 +31,10 @@ module.exports = Franz => {
   const getMessages = () => Franz.setBadge(updates);
 
   modal = createModal();
-  document.body.appendChild(modal);
-  document.addEventListener('keydown', event => event.keyCode === 27 && hideModal());
+  document.addEventListener("DOMContentLoaded", function(event) {
+    document.body.appendChild(modal);
+    document.addEventListener('keydown', event => event.keyCode === 27 && hideModal());
+  });
 
   Franz.injectCSS(path.join(__dirname, 'calendar.css'));
   Franz.loop(getMessages);
