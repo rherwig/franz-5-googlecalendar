@@ -31,7 +31,7 @@ module.exports = Franz => {
   const getMessages = () => Franz.setBadge(updates);
 
   modal = createModal();
-  document.addEventListener("DOMContentLoaded", function(event) {
+  document.addEventListener('DOMContentLoaded', event => {
     document.body.appendChild(modal);
     document.addEventListener('keydown', event => event.keyCode === 27 && hideModal());
   });
