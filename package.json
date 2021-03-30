@@ -7,7 +7,7 @@
     "author": "Rico Herwig <rherwig4711@gmail.com>",
     "license": "MIT",
     "config": {
-        "serviceURL": "https://calendar.google.com/calendar",
+        "serviceURL": "https://calendar.google.com/calendar/render",
         "hasNotificationSound": true,
         "hasDirectMessages": true,
         "openDevTools": true
